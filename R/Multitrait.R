@@ -2033,7 +2033,7 @@ Multitrait<-function(y,
 				
 				tmp<-which(names(ETA[[j]]$Cov)%in%c("post_Omega","post_Omega2","Omegainv",
 				                                    "post_W","post_W2","post_PSI","post_PSI2",
-				                                    "F",
+				                                    
 				                                    "post_Sigma","post_Sigma2"))
 				ETA[[j]]$Cov<-ETA[[j]]$Cov[-tmp] 
 				
@@ -2071,7 +2071,7 @@ Multitrait<-function(y,
 	
 	#Deep cleaning!
 	tmp<-which(names(resCov)%in%c("post_R","post_R2","Rinv","post_W","post_W2",
-			                      "post_PSI","post_PSI2","F"))
+			                      "post_PSI","post_PSI2"))
 	resCov<-resCov[-tmp]
 			    
 	rm(tmp)
